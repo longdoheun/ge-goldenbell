@@ -1,0 +1,170 @@
+html, body {
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(179, 230, 248);
+  height: 100%;
+}
+audio{
+  display: none;
+}
+#root{
+  height: 100%;
+}
+.con1{
+  z-index: 4;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*  */
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes move {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+.con3{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+.container{
+  width: 93%;
+  background-color: #fff;
+  height: 90%;
+  outline: rgb(254, 191, 52) 15px solid;
+  border-radius: 20px;
+}
+header{
+  display: none;
+  /* display: flex; */
+  margin-left: 2%;
+}
+.matrix-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.starblock{
+  width: 5%;
+  margin-right: 2%;
+}
+.con2{
+  z-index: 5;
+  position: absolute;
+  left: -2%;
+}
+@keyframes grass-move {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes dragon-move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 2%;
+  }
+}
+/* clouds */
+.clouds{
+  width: 100%;
+  position: fixed;
+  bottom: 60%;
+  animation-name: cloud-move;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 100%;
+  }
+}
+.clouds > img{
+  width: 15%;
+  margin-left: 2%;
+}
+.clouds > img:nth-child(4n){
+  margin-bottom: 2%;
+}
+.clouds > img:nth-child(4n+2){
+  width: 10%;
+  margin-bottom: 2%;
+}
+.clouds > img:nth-child(4n+3){
+  width: 10%;
+  margin-left: 30%;
+}
+
+.img-wrap{
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+}
+.ongrass{
+  position: relative;
+  display: flex;
+  bottom: -10%;
+  animation-name: dragon-move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.ongrass > span{
+  width: 54%;
+  height:1px;
+}
+.ongrass > div{
+  width: 9%
+}
+.downgrass{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  bottom: 4%;
+        /*  */
+  animation-name: grass-move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+}
+.green-1{
+  width: 20%;
+}
+.green-2{
+  width: 15%
+}
+.downgrass > span{
+  width: 60%
+}
+.grass{
+  width: 120%;
+  left: -5%;
+}
+
+.dragon{
+  width:10%;
+}
+.coin{
+  width:5%;
+  margin-left: 2%;
+}

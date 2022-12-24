@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.matrix-padding{
+  margin-top: 5%;
+}
+.matrix{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+ul > li > ul{
+  display: flex;
+  flex-direction: row;
+}
+ul > li > ul > li{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  /* outline: 1px solid; */
+  border-radius: 20px;
+  margin: 3px;
+}
+ul > li > ul > li > p{
+  color: #fff;
+  position: relative;
+  top: -60%;
+  left: -5%;
+  font-size: 20px;
+  font-weight: bold;
+}
+ul > li > ul > li > img{
+  width: 100%;
+}
